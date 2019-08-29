@@ -4,7 +4,7 @@ package main
 import (
 	"fmt"
 
-	"gopkg.in/gographics/imagick.v3/imagick"
+	"gopkg.in/jhford-scout24/imagick.v3/imagick"
 )
 
 func image_blur() {

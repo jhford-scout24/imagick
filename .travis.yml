@@ -40,7 +40,7 @@ before_install:
   - export PKG_CONFIG_PATH=$HOME/opt/lib/pkgconfig
   
   # Set the import path for the particular branch of imagick bindings
-  - export IMAGICK_IMPORT_PATH=$(grep gopkg.in/gographics/imagick.v imagick/imagick.go | cut -d\" -f2)
+  - export IMAGICK_IMPORT_PATH=$(grep gopkg.in/jhford-scout24/imagick.v imagick/imagick.go | cut -d\" -f2)
 
 install:
   - pkg-config --cflags --libs MagickWand
