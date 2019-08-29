@@ -5,6 +5,6 @@
 package imagick // import "gopkg.in/gographics/imagick.v2/imagick"
 
 /*
-#cgo !no_pkgconfig pkg-config: MagickWand MagickCore
+#cgo !no_pkgconfig pkg-config: MagickWand-6.Q16HDRI MagickCore-6.Q16HDRI
 */
 import "C"
