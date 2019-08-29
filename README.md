@@ -1,6 +1,6 @@
 # Go Imagick
 
-[![GoDoc](https://godoc.org/gopkg.in/gographics/imagick.v2/imagick?status.svg)](https://gopkg.in/gographics/imagick.v2/imagick) [![Travis Build Status](https://api.travis-ci.org/gographics/imagick.svg)](https://travis-ci.org/gographics/imagick)
+[![GoDoc](https://godoc.org/gopkg.in/jhford-scout24/imagick.v2/imagick?status.svg)](https://gopkg.in/jhford-scout24/imagick.v2/imagick) [![Travis Build Status](https://api.travis-ci.org/jhford-scout24/imagick.svg)](https://travis-ci.org/jhford-scout24/imagick)
 
 Go Imagick is a Go bind to ImageMagick's MagickWand C API.
 
@@ -15,9 +15,9 @@ legacy (tag v1.x.x): 6.7.x   <= ImageMagick <= 6.8.9-8
 They map, respectively, through gopkg.in:
 
 ```
-gopkg.in/gographics/imagick.v2/imagick
-gopkg.in/gographics/imagick.v3/imagick
-gopkg.in/gographics/imagick.v1/imagick
+gopkg.in/jhford-scout24/imagick.v2/imagick
+gopkg.in/jhford-scout24/imagick.v3/imagick
+gopkg.in/jhford-scout24/imagick.v1/imagick
 ```
 
 # Install
@@ -55,7 +55,7 @@ pacman -S mingw-w64-x86_64-imagemagick
 set PATH=<msys64>\mingw64\bin;%PATH%
 set PKG_CONFIG_PATH=<msys64>\mingw64\lib\pkgconfig
 set MAGICK_CODER_MODULE_PATH=<msys64>\mingw64\lib\ImageMagick-7.0.5\modules-Q16HDRI\coders
-go build gopkg.in/gographics/imagick.v3/imagick
+go build gopkg.in/jhford-scout24/imagick.v3/imagick
 ```
 (BTW: you should change `<msys64>` to your installation path of `msys2` ; the environment variable of `MAGICK_CODER_MODULE_PATH` is to avoid `NoDecodeDelegateForThisImageFormat` error.)
 
@@ -70,7 +70,7 @@ pkg-config --cflags --libs MagickWand
 Then go get it:
 
 ```
-go get gopkg.in/gographics/imagick.v2/imagick
+go get gopkg.in/jhford-scout24/imagick.v2/imagick
 ```
 
 ### Build tags
@@ -78,7 +78,7 @@ go get gopkg.in/gographics/imagick.v2/imagick
 If you want to specify CGO_CFLAGS/CGO_LDFLAGS manually at build time, such as for building statically or without pkg-config, you can use the "no_pkgconfig" build tag:
 
 ```
-go build -tags no_pkgconfig gopkg.in/gographics/imagick.v2/imagick
+go build -tags no_pkgconfig gopkg.in/jhford-scout24/imagick.v2/imagick
 ```
 
 # Examples
@@ -90,7 +90,7 @@ The examples folder is full with usage examples ported from C ones found in here
 ```go
 package main
 
-import "gopkg.in/gographics/imagick.v2/imagick"
+import "gopkg.in/jhford-scout24/imagick.v2/imagick"
 
 func main() {
     imagick.Initialize()
@@ -118,7 +118,7 @@ If you use struct literals, you should free resources manually:
 ```go
 package main
 
-import "github.com/gographics/imagick/imagick"
+import "github.com/jhford-scout24/imagick/imagick"
 
 func main() {
     imagick.Initialize()
@@ -136,7 +136,7 @@ Both methods are compatible if constructor methods used:
 ```go
 package main
 
-import "github.com/gographics/imagick/imagick"
+import "github.com/jhford-scout24/imagick/imagick"
 
 func main() {
     imagick.Initialize()
@@ -153,7 +153,7 @@ But you should NOT mix two ways of object creation:
 ```go
 package main
 
-import "github.com/gographics/imagick/imagick"
+import "github.com/jhford-scout24/imagick/imagick"
 
 func main() {
     imagick.Initialize()

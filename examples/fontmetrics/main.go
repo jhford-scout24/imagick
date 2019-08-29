@@ -2,7 +2,7 @@
 package main
 
 import (
-	"gopkg.in/gographics/imagick.v2/imagick"
+	"gopkg.in/jhford-scout24/imagick.v2/imagick"
 )
 
 // Set up the drawingwand "dw" for the given font name, font size, and colour.

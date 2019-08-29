@@ -1,7 +1,7 @@
 // Port of http://members.shaw.ca/el.supremo/MagickWand/modulate.htm to Go
 package main
 
-import "gopkg.in/gographics/imagick.v2/imagick"
+import "gopkg.in/jhford-scout24/imagick.v2/imagick"
 
 func main() {
 	imagick.Initialize()
